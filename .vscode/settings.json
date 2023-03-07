@@ -1,0 +1,6 @@
+{
+  "less.compile": {
+    "autoprefixer": "defaults",
+    "math": "always"
+  }
+}
