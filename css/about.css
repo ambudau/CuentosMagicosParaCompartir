@@ -104,6 +104,9 @@
 /*-- -------------------------- -->
 <---    Final Call To Action    -->
 <--- -------------------------- -*/
+#cta {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #cta {

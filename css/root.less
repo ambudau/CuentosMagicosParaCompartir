@@ -784,7 +784,7 @@
 @media only screen and (min-width: 0em) {
 
     #footer {
-        background: #1C1C1C;
+        background: #fff;
         padding: 84/16em 0 20/16em;
         font-size:~"min(4vw, 1.2em)";
 
@@ -810,7 +810,7 @@
             p {
                 font-size: 14/16em;
                 line-height: 27/14;
-                color: #fff;
+                color: #1a1a1a;
 				opacity: .9;
                 text-align: center;
                 width: 100%;
@@ -852,22 +852,22 @@
                     li {
                         list-style: none;
                         margin-bottom: 12/18em;
-						color: #fff;
+						color: #1a1a1a;
 						font-size: 18/18em;
 						opacity: .9;
                         
                         a {
                             text-decoration: none;
-                            color: #fff;
+                            color: #1a1a1a;
                             line-height: 21/18;
 							transition: color .3s;
-							&:hover {
-								color: var(--primary);
-							}
+							// &:hover {
+							// 	color: var(--primary);
+							// }
                         }
                     }
                     h2 {
-                        color: #fff;
+                        color: #1a1a1a;
                         font-size: 18/16em;
                         line-height: 21/18;
                         margin-bottom: 37/18em;
@@ -904,7 +904,7 @@
         }
 
 		.credit {
-			color: #fff;
+			color: #1a1a1a;
 			width: 96%;
 			margin: auto;
 			text-align: center;
@@ -1028,6 +1028,32 @@
     body.dark-mode {
         #footer {
             background: #061623;
+
+            .left-section {
+                p{
+                    color: #fff;
+                }
+            }
+
+            .right-section {
+                .lists {
+                    li {
+                        color: #fff;
+
+                        a {
+                            color: #fff;
+                        }
+                    }
+
+                    h2 {
+                        color: #fff;
+                    }
+                }
+            }
+
+            .credit {
+                color: #fff;
+            }
         }
     }
 }
