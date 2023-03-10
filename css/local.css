@@ -56,7 +56,7 @@
     display: block;
     height: 32.25em;
     width: 28.75em;
-    background: url("/images/content-circles.svg");
+    background: url('/images/content-circles.svg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -170,7 +170,7 @@
     display: block;
     height: 32.25em;
     width: 28.75em;
-    background: url("/images/content-circles.svg");
+    background: url('/images/content-circles.svg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -309,7 +309,7 @@
     display: block;
     height: 69.25em;
     width: 125em;
-    background: url("../images/cta-squares.svg");
+    background: url('../images/cta-squares.svg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -345,6 +345,9 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
+  body.dark-mode #cta {
+    box-shadow: none;
+  }
   body.dark-mode #cta:after {
     display: none;
   }

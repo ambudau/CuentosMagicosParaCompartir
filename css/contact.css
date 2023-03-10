@@ -23,7 +23,7 @@
     font-weight: 900;
     font-size: min(9vw, 2.4em);
     line-height: 1.20833333;
-    color: #1A1A1A;
+    color: #1a1a1a;
     position: relative;
     margin-bottom: 0.875em;
     text-align: left;
@@ -54,10 +54,10 @@
     font-size: 1em;
     margin-bottom: 0.375em;
   }
-  #form #contact .input-group input[type="text"],
-  #form #contact .input-group input[type="email"],
-  #form #contact .input-group input[type="tel"],
-  #form #contact .input-group input[type="url"],
+  #form #contact .input-group input[type='text'],
+  #form #contact .input-group input[type='email'],
+  #form #contact .input-group input[type='tel'],
+  #form #contact .input-group input[type='url'],
   #form #contact .input-group textarea {
     font-size: 1em;
     height: 4.1875em;
@@ -74,19 +74,19 @@
   }
   #form #contact .input-group ::-webkit-input-placeholder {
     color: #d4d4d4;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   #form #contact .input-group ::-moz-placeholder {
     color: #d4d4d4;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   #form #contact .input-group ::-ms-input-placeholder {
     color: #d4d4d4;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   #form #contact .input-group ::placeholder {
     color: #d4d4d4;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   #form #contact .button-solid {
     border: none;
@@ -167,17 +167,17 @@
     border: 0.0625em solid var(--primary);
     pointer-events: none;
   }
-  #form #contact .input-group:hover input[type="text"],
-  #form #contact .input-group:hover input[type="email"],
-  #form #contact .input-group:hover input[type="tel"],
-  #form #contact .input-group:hover input[type="url"],
+  #form #contact .input-group:hover input[type='text'],
+  #form #contact .input-group:hover input[type='email'],
+  #form #contact .input-group:hover input[type='tel'],
+  #form #contact .input-group:hover input[type='url'],
   #form #contact .input-group:hover textarea {
     padding-left: 1.25em;
   }
-  #form #contact .input-group input[type="text"],
-  #form #contact .input-group input[type="email"],
-  #form #contact .input-group input[type="tel"],
-  #form #contact .input-group input[type="url"],
+  #form #contact .input-group input[type='text'],
+  #form #contact .input-group input[type='email'],
+  #form #contact .input-group input[type='tel'],
+  #form #contact .input-group input[type='url'],
   #form #contact .input-group textarea {
     border-bottom: none;
     position: relative;
@@ -249,6 +249,9 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0px) {
+  body.dark-mode #form {
+    box-shadow: none;
+  }
   body.dark-mode #form .title {
     color: #fff;
   }
