@@ -11,7 +11,6 @@ function submitForm(event) {
   event.preventDefault();
   const clientFormData = new FormData(event.target);
   const clientFormProps = Object.fromEntries(clientFormData);
-  console.log(clientFormProps);
 
   const formData = new FormData();
   formData.append(NAME_ID, clientFormProps.name);
@@ -22,6 +21,10 @@ function submitForm(event) {
 
   fetch(CORS_PROXY + ACTION_URL, {
     method: 'post',
+    mode: 'cors',
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
     body: formData,
   });
 }
