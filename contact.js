@@ -7,6 +7,8 @@ const HEAR_ID = 'entry.1166974658';
 const MESSAGE_ID = 'entry.839337160';
 const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/';
 
+const form = document.getElementById('contact');
+
 function submitForm(event) {
   event.preventDefault();
   const clientFormData = new FormData(event.target);
@@ -27,7 +29,7 @@ function submitForm(event) {
     },
     body: formData,
   });
+  form.reset();
 }
 
-const form = document.getElementById('form');
 form.addEventListener('submit', submitForm);
