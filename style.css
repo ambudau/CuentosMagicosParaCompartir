@@ -71,7 +71,7 @@ ul li {
     position: relative;
 }
 
-ul li::before {
+.checkmark::before {
     content: "✔";
     color: #28a745;
     position: absolute;
